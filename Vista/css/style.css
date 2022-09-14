@@ -1,0 +1,193 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.content_a{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-direction: row;
+
+}
+
+.content_b{
+    margin-top: 7%;
+    display: flex;
+    width: 90%;
+    height: 40%;
+    flex-direction: row;
+    padding: 3%;
+}
+
+.pais{
+    width: 90%;
+    height: 100%;
+    padding: 1%;
+    background-color: rgba(204, 216, 228, 0.7);
+    padding: 2%;
+    position: relative;
+}
+
+.sobre{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border: none;
+
+}
+
+.pais svg{
+    height: 100%;
+}
+
+.slidebar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+}
+/* .slidebar input{
+    width: 100%;
+    font-size: 1em;
+    padding: 5% 1% 5% 1%;
+    margin: 2%;
+    border: 1px solid rgba(0,128,255,.6);
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+} */
+
+.slidebar .checkFenomeno{
+    size: 1rem;
+    display: flex;
+    align-items: row;
+    align-items: center;
+
+    color: #1292EE;
+    background-color: rgb(210, 222, 222);
+    font-weight: bold;
+    line-height: 3em;
+
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+/* .slidebar .checkFenomeno input[type="checkbox"] + span + span{
+    color: #1292EE;
+    background-color: rgb(210, 222, 222);
+    font-weight: bold;
+    line-height: 3em;
+} */
+
+/* .slidebar input[type="checkbox"] label{
+    background-color: #1292EE;
+}
+ */
+.slidebar button{
+    font-size: .8em;
+    padding: 5%;
+    margin: 2%;
+    border: 1px solid rgba(0,128,255,.6);
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+.slidebar button:hover{
+    border: 1px solid rgba(0,128,255,.7);
+    background-color: rgba(0,128,255,.7);
+    cursor: pointer;
+    color: white;
+}
+
+.slidebar .noVisible{
+    display: none;
+}
+.slidebar .visible{
+    display: flex;
+}
+
+.slidebar .enable{
+    background-color: rgba(0,128,255,.9);
+    color: white;
+}
+
+.slidebar .disable{
+    background-color: white;
+    color: black;
+}
+
+.content_b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_b .visible{
+    display: flex;
+}
+
+.content_b .noVisible{
+    display: none;
+}
+
+/* ........Estilos para la tabla........... */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table .TableEnable{
+    display: flex;
+}
+
+table .disable{
+    display: none;
+}
+
+thead {
+    background-color: #1292EE;
+    color: white;
+
+}
+
+tr:nth-child(even){
+    background-color: rgb(179, 178, 178);
+}
+
+td,th{
+    padding: 2px 2px;
+    border: solid 1px gray;
+}
+
+th{
+    width: auto;
+}
+
+th:nth-child(n+1),
+td:nth-child(n+1){
+    text-align: center;
+}
+
+tr:hover{
+    background-color: rgb(160,220,255);
+}
+
+tbody{
+    position: sticky;
+    top: 0;
+}
